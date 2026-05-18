@@ -1,0 +1,152 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "num_examples": 8,
+  "accuracy": 0.625,
+  "avg_confidence": 0.6341791728410278,
+  "expected_calibration_error": 0.28551359470120885,
+  "negative_log_likelihood": 0.7628762206155448,
+  "by_category": {
+    "math": {
+      "n": 2,
+      "accuracy": 0.0,
+      "avg_confidence": 0.3538116022975796
+    },
+    "ml": {
+      "n": 2,
+      "accuracy": 1.0,
+      "avg_confidence": 0.8435311535507786
+    },
+    "reasoning": {
+      "n": 2,
+      "accuracy": 0.5,
+      "avg_confidence": 0.5037572543261333
+    },
+    "systems": {
+      "n": 2,
+      "accuracy": 1.0,
+      "avg_confidence": 0.8356166811896196
+    }
+  },
+  "records": [
+    {
+      "id": "math_001",
+      "category": "math",
+      "question": "A model processes 8 batches per second. Each batch has 16 prompts. How many prompts are processed per second?",
+      "answer": "C",
+      "prediction": "B",
+      "correct": false,
+      "confidence": 0.41795982077644706,
+      "choice_probabilities": {
+        "A": 0.08230116847713491,
+        "B": 0.41795982077644706,
+        "C": 0.1742315750333371,
+        "D": 0.325507435713081
+      }
+    },
+    {
+      "id": "math_002",
+      "category": "math",
+      "question": "If latency decreases from 200 ms to 150 ms, what is the percent reduction?",
+      "answer": "C",
+      "prediction": "B",
+      "correct": false,
+      "confidence": 0.28966338381871215,
+      "choice_probabilities": {
+        "A": 0.2556270390121863,
+        "B": 0.28966338381871215,
+        "C": 0.2556270390121863,
+        "D": 0.19908253815691523
+      }
+    },
+    {
+      "id": "systems_001",
+      "category": "systems",
+      "question": "In autoregressive transformer inference, what does a KV cache primarily avoid?",
+      "answer": "B",
+      "prediction": "B",
+      "correct": true,
+      "confidence": 0.9458549270074204,
+      "choice_probabilities": {
+        "A": 0.01723113823222325,
+        "B": 0.9458549270074204,
+        "C": 0.011842776568372265,
+        "D": 0.02507115819198428
+      }
+    },
+    {
+      "id": "systems_002",
+      "category": "systems",
+      "question": "Which factor often becomes a bottleneck during long-context LLM decoding?",
+      "answer": "A",
+      "prediction": "A",
+      "correct": true,
+      "confidence": 0.7253784353718189,
+      "choice_probabilities": {
+        "A": 0.7253784353718189,
+        "B": 0.1612227982615171,
+        "C": 0.046191105065147356,
+        "D": 0.06720766130151673
+      }
+    },
+    {
+      "id": "ml_001",
+      "category": "ml",
+      "question": "Expected calibration error measures what relationship?",
+      "answer": "B",
+      "prediction": "B",
+      "correct": true,
+      "confidence": 0.9735335995069963,
+      "choice_probabilities": {
+        "A": 0.012357128704708212,
+        "B": 0.9735335995069963,
+        "C": 0.006614294362875137,
+        "D": 0.007494977425420591
+      }
+    },
+    {
+      "id": "ml_002",
+      "category": "ml",
+      "question": "LoRA is commonly used to reduce what during fine-tuning?",
+      "answer": "A",
+      "prediction": "A",
+      "correct": true,
+      "confidence": 0.7135287075945609,
+      "choice_probabilities": {
+        "A": 0.7135287075945609,
+        "B": 0.06623900878683996,
+        "C": 0.18005629392040606,
+        "D": 0.04017598969819296
+      }
+    },
+    {
+      "id": "reasoning_001",
+      "category": "reasoning",
+      "question": "All sparse signals are vectors. Some vectors are noisy. Which statement must be true?",
+      "answer": "B",
+      "prediction": "B",
+      "correct": true,
+      "confidence": 0.5363666430784793,
+      "choice_probabilities": {
+        "A": 0.3253228138742406,
+        "B": 0.5363666430784793,
+        "C": 0.044372968338186214,
+        "D": 0.09393757470909389
+      }
+    },
+    {
+      "id": "reasoning_002",
+      "category": "reasoning",
+      "question": "A benchmark has 100 questions. A model answers 73 correctly. What is its accuracy?",
+      "answer": "C",
+      "prediction": "B",
+      "correct": false,
+      "confidence": 0.4711478655737872,
+      "choice_probabilities": {
+        "A": 0.1964036508103073,
+        "B": 0.4711478655737872,
+        "C": 0.1964036508103073,
+        "D": 0.13604483280559806
+      }
+    }
+  ]
+}
